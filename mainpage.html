@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title" style="color: rgb(12, 104, 4); font-size: 50px;">Exercises Solution</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam accusamus totam eius ipsum suscipit necessitatibus hic deserunt nemo nam. Vel nostrum unde quibusdam quae eveniet maxime autem culpa quis?</p>
+    <div onclick="firstDiv()">fisrt
+        <div onclick="secondDiv()">second
+            <div onclick="thirdDiv()">third</div>
+        </div>
+    </div>
+
+<ul class="list">
+    <li>html</li>
+    <li>css</li>
+    <li>js</li>
+    <li>bootstrap</li>
+    <li>npm</li>
+</ul>
+
+<input type="text" placeholder="dev language">
+
+    <script>
+"use strict"
+
+let firstNums = [1,2,3,4]
+let secondNums = [5,6,7,8]
+
+let allNums = [...firstNums , ...secondNums]
+
+
+// console.log(allNums);
+
+let user = {
+    id:1 , 
+    name:"parsa" , 
+    age:34 ,
+    phone: +989107432845
+}
+
+
+function sum (a,b,c){
+
+ let add = 0
+ let convertedArguments = Array.from(arguments)
+   
+ convertedArguments.forEach(function(item){
+        add += item
+        
+    });
+ return add
+}
+
+ console.log(sum(4,2,6,1,9,3,7)); 
+
+
+
+
+    </script>
+</body>
+</html>
